@@ -22,7 +22,7 @@ const features = [
     icon: Sparkles,
     title: "AI-Powered Analysis",
     description: "Get detailed feedback on every photo with scores for technical execution, visual impact, and overall quality",
-    image: "/overlook-website/images/Frame 23.png",
+    image: "/overlook-website/images/6x9_1-1.png",
     details: [
       "Exercise score for technical skills",
       "Visual score for composition",
