@@ -10,7 +10,7 @@ const features = [
     icon: Brain,
     title: "Photography Challenges",
     description: "50+ hands-on challenges that teach you composition, lighting, and storytelling through practice",
-    image: "/images/Frame 22.png",
+    image: "/overlook-website/images/Frame 22.png",
     details: [
       "Progressive difficulty levels",
       "Real-world photography scenarios",
@@ -22,7 +22,7 @@ const features = [
     icon: Sparkles,
     title: "AI-Powered Analysis",
     description: "Get detailed feedback on every photo with scores for technical execution, visual impact, and overall quality",
-    image: "/images/Frame 23.png",
+    image: "/overlook-website/images/Frame 23.png",
     details: [
       "Exercise score for technical skills",
       "Visual score for composition",
@@ -34,7 +34,7 @@ const features = [
     icon: Camera,
     title: "Learn While Shooting",
     description: "Import existing photos or capture new ones with real-time guidance and tips",
-    image: "/images/6x9_1.png",
+    image: "/overlook-website/images/6x9_1.png",
     details: [
       "Import from camera roll",
       "In-app camera with guides",

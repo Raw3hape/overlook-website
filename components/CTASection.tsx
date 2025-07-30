@@ -57,7 +57,7 @@ export default function CTASection() {
             <div className="absolute -inset-4 gold-gradient rounded-3xl opacity-20 blur-3xl" />
             <div className="relative glass rounded-2xl p-2">
               <Image
-                src="/images/Foto_analysis_1.jpg"
+                src="/overlook-website/images/Foto_analysis_1.jpg"
                 alt="Overlook app analysis"
                 width={800}
                 height={400}

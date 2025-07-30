@@ -7,42 +7,42 @@ import { useState } from "react";
 const photos = [
   {
     id: 1,
-    src: "/images/1_left.jpg",
+    src: "/overlook-website/images/1_left.jpg",
     category: "street",
     score: 8.5,
     photographer: "Alex Chen"
   },
   {
     id: 2,
-    src: "/images/1_right.jpg",
+    src: "/overlook-website/images/1_right.jpg",
     category: "portrait",
     score: 9.0,
     photographer: "Sarah Miller"
   },
   {
     id: 3,
-    src: "/images/2_left.jpg",
+    src: "/overlook-website/images/2_left.jpg",
     category: "landscape",
     score: 8.8,
     photographer: "Marcus Johnson"
   },
   {
     id: 4,
-    src: "/images/2_right.jpg",
+    src: "/overlook-website/images/2_right.jpg",
     category: "portrait",
     score: 8.7,
     photographer: "Elena Rodriguez"
   },
   {
     id: 5,
-    src: "/images/3_left.jpg",
+    src: "/overlook-website/images/3_left.jpg",
     category: "street",
     score: 9.2,
     photographer: "David Kim"
   },
   {
     id: 6,
-    src: "/images/3_right.jpg",
+    src: "/overlook-website/images/3_right.jpg",
     category: "landscape",
     score: 8.9,
     photographer: "Lisa Wang"

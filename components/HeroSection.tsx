@@ -61,7 +61,7 @@ export default function HeroSection() {
             <div className="relative mx-auto w-full max-w-lg">
               <div className="absolute -inset-4 gold-gradient rounded-3xl opacity-10 blur-2xl animate-pulse" />
               <Image
-                src="/images/triforce1255_black_Iphone_s16_pro_in_hands_modern_minimalistic_e_da1138f5-4260-44a2-924f-d59c2e74f497.png"
+                src="/overlook-website/images/triforce1255_black_Iphone_s16_pro_in_hands_modern_minimalistic_e_da1138f5-4260-44a2-924f-d59c2e74f497.png"
                 alt="Overlook app in action"
                 width={600}
                 height={800}
