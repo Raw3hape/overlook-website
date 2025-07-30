@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Download, Camera, Target, Award } from "lucide-react";
+import Image from "next/image";
 
 const steps = [
   {
@@ -70,6 +71,25 @@ export default function HowItWorks() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mt-16 max-w-2xl mx-auto"
+        >
+          <h3 className="text-2xl font-bold text-center mb-8">
+            Track Your <span className="text-gradient">Progress</span>
+          </h3>
+          <Image
+            src="/overlook-website/images/6x9_1-1.png"
+            alt="Overlook progress tracking"
+            width={600}
+            height={800}
+            className="mx-auto rounded-2xl"
+          />
+        </motion.div>
       </div>
     </section>
   );

@@ -52,18 +52,15 @@ export default function CTASection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="relative max-w-2xl mx-auto"
+            className="relative max-w-lg mx-auto"
           >
-            <div className="absolute -inset-4 gold-gradient rounded-3xl opacity-20 blur-3xl" />
-            <div className="relative glass rounded-2xl p-2">
-              <Image
-                src="/overlook-website/images/Foto_analysis_1.jpg"
-                alt="Overlook app analysis"
-                width={800}
-                height={400}
-                className="rounded-xl w-full"
-              />
-            </div>
+            <Image
+              src="/overlook-website/images/triforce1255_black_Iphone_s16_pro_in_hands_modern_minimalistic_e_da1138f5-4260-44a2-924f-d59c2e74f497.png"
+              alt="Overlook app in use"
+              width={600}
+              height={800}
+              className="relative z-10 mx-auto rounded-2xl"
+            />
           </motion.div>
         </motion.div>
       </div>

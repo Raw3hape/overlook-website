@@ -100,7 +100,7 @@ export default function ResultsGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-2xl glass"
+              className="group relative overflow-hidden rounded-2xl"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
@@ -111,7 +111,7 @@ export default function ResultsGallery() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-60" />
                 
-                <div className="absolute top-4 right-4 glass px-3 py-1 rounded-full">
+                <div className="absolute top-4 right-4 bg-black/60 px-3 py-1 rounded-full">
                   <span className="text-gold-500 font-bold">{photo.score}</span>
                 </div>
 
