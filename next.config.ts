@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "",
+  basePath: "/overlook-website",
+  assetPrefix: "/overlook-website",
   trailingSlash: true,
   async headers() {
     return [
