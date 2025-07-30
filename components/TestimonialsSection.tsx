@@ -120,24 +120,10 @@ export default function TestimonialsSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
+          className="mt-16 text-center"
         >
-          <div className="text-center">
-            <p className="text-4xl font-bold text-gradient">4.8</p>
-            <p className="text-gray-400 mt-2">App Store Rating</p>
-          </div>
-          <div className="text-center">
-            <p className="text-4xl font-bold text-gradient">10K+</p>
-            <p className="text-gray-400 mt-2">Active Users</p>
-          </div>
-          <div className="text-center">
-            <p className="text-4xl font-bold text-gradient">50+</p>
-            <p className="text-gray-400 mt-2">Photo Challenges</p>
-          </div>
-          <div className="text-center">
-            <p className="text-4xl font-bold text-gradient">95%</p>
-            <p className="text-gray-400 mt-2">User Improvement</p>
-          </div>
+          <p className="text-2xl font-bold text-gradient">50+ Photo Challenges</p>
+          <p className="text-gray-400 mt-2">Ready to help you improve your photography skills</p>
         </motion.div>
       </div>
     </section>

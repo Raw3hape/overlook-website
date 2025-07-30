@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, Star } from "lucide-react";
+import { Download } from "lucide-react";
 import Image from "next/image";
 
 export default function CTASection() {
@@ -37,14 +37,9 @@ export default function CTASection() {
               Download for iOS
             </a>
             
-            <div className="flex items-center gap-2 text-gray-400">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-gold-500 text-gold-500" />
-                ))}
-              </div>
-              <span>4.8 on App Store</span>
-            </div>
+            <p className="text-gray-400">
+              Coming soon to the App Store
+            </p>
           </div>
 
           <motion.div

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Download, Star } from "lucide-react";
+import { Download } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -40,16 +40,9 @@ export default function HeroSection() {
               </a>
             </div>
 
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-gold-500 text-gold-500" />
-                ))}
-              </div>
-              <p className="text-gray-400">
-                4.8/5 • 10K+ photographers improving daily
-              </p>
-            </div>
+            <p className="text-gray-400">
+              Coming soon to the App Store
+            </p>
           </motion.div>
 
           <motion.div
