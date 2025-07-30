@@ -5,20 +5,21 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Overlook - Learn Photography by Shooting, Not Reading",
-  description: "AI-powered photography companion that helps you master composition and camera settings in real-time. Get instant feedback and improve with every shot.",
-  keywords: "camera app, AI photography, composition guide, learn photography, photo analysis, RAW camera, manual camera controls",
+  title: "Overlook - Master Photography Through Practice",
+  description: "Complete photography challenges, get AI-powered feedback, and track your improvement. Learn composition, lighting, and storytelling with personalized guidance.",
+  keywords: "photography challenges, learn photography, AI photo analysis, composition guide, photography app, camera tutorial, photo feedback, photography practice",
+  metadataBase: new URL("https://raw3hape.github.io/overlook-website"),
   openGraph: {
-    title: "Overlook - Learn Photography by Shooting, Not Reading",
-    description: "AI-powered photography companion that helps you master composition and camera settings in real-time.",
-    url: "https://overlook.app",
+    title: "Overlook - Master Photography Through Practice",
+    description: "Complete challenges, get AI feedback, and track your improvement with every photo.",
+    url: "https://raw3hape.github.io/overlook-website",
     siteName: "Overlook",
     images: [
       {
-        url: "https://overlook.app/images/og-image.jpg",
+        url: "/images/6x9_1.png",
         width: 1200,
         height: 630,
-        alt: "Overlook - AI Photography App",
+        alt: "Overlook - Photography Learning App",
       },
     ],
     locale: "en_US",
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Overlook - Learn Photography by Shooting",
-    description: "AI-powered photography companion for better photos",
-    images: ["https://overlook.app/images/twitter-image.jpg"],
+    title: "Overlook - Master Photography Through Practice",
+    description: "Complete challenges and get AI feedback to improve your photography",
+    images: ["/images/6x9_1.png"],
     creator: "@overlookapp",
   },
   robots: {
@@ -47,6 +48,11 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/manifest.json",
+  alternates: {
+    canonical: "https://raw3hape.github.io/overlook-website",
+  },
+  authors: [{ name: "Overlook Team" }],
+  category: "Photography",
 };
 
 export default function RootLayout({

@@ -1,10 +1,10 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import FeatureSection from "@/components/FeatureSection";
-import GallerySection from "@/components/GallerySection";
-import LearningCenter from "@/components/LearningCenter";
+import HowItWorks from "@/components/HowItWorks";
+import ResultsGallery from "@/components/ResultsGallery";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import PricingSection from "@/components/PricingSection";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
       <main>
         <HeroSection />
         <FeatureSection />
-        <GallerySection />
-        <LearningCenter />
+        <HowItWorks />
+        <ResultsGallery />
         <TestimonialsSection />
-        <PricingSection />
+        <CTASection />
       </main>
       <Footer />
     </>

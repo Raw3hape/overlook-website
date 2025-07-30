@@ -8,38 +8,38 @@ import { Sparkles, Brain, Camera, Zap, Layers, BookOpen } from "lucide-react";
 const features = [
   {
     icon: Brain,
-    title: "AI-Powered Analysis",
-    description: "Get instant feedback on composition, lighting, and technical settings",
-    image: "/images/feature-ai.jpg",
+    title: "Photography Challenges",
+    description: "50+ hands-on challenges that teach you composition, lighting, and storytelling through practice",
+    image: "/images/Frame 22.png",
     details: [
-      "Real-time composition grid overlay",
-      "Exposure and color balance suggestions",
-      "Subject detection and focus recommendations",
-      "Historical improvement tracking"
+      "Progressive difficulty levels",
+      "Real-world photography scenarios",
+      "Instant feedback on submissions",
+      "Track your completion progress"
     ]
   },
   {
     icon: Sparkles,
-    title: "Learn While You Shoot",
-    description: "Interactive tips and tutorials based on what you're photographing",
-    image: "/images/feature-learn.jpg",
+    title: "AI-Powered Analysis",
+    description: "Get detailed feedback on every photo with scores for technical execution, visual impact, and overall quality",
+    image: "/images/Frame 23.png",
     details: [
-      "Context-aware photography tips",
-      "Technique demonstrations",
-      "Professional examples",
-      "Personalized learning path"
+      "Exercise score for technical skills",
+      "Visual score for composition",
+      "Overall rating with explanations",
+      "Improvement suggestions"
     ]
   },
   {
     icon: Camera,
-    title: "Pro Camera Controls",
-    description: "Full manual control with RAW support for maximum quality",
-    image: "/images/feature-pro.jpg",
+    title: "Learn While Shooting",
+    description: "Import existing photos or capture new ones with real-time guidance and tips",
+    image: "/images/6x9_1.png",
     details: [
-      "Full manual exposure control",
-      "RAW + JPEG capture",
-      "Custom white balance",
-      "Focus peaking and zebras"
+      "Import from camera roll",
+      "In-app camera with guides",
+      "Context-aware tips",
+      "Save your progress"
     ]
   }
 ];
@@ -106,7 +106,7 @@ function FeatureCard({ feature, index }: { feature: typeof features[0], index: n
 
 export default function FeatureSection() {
   return (
-    <section className="py-24 relative">
+    <section id="features" className="py-24 relative">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -115,10 +115,11 @@ export default function FeatureSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Photography Made <span className="text-gradient">Intelligent</span>
+            Learn Photography <span className="text-gradient">The Right Way</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Advanced features that help you capture better photos and learn faster than ever before
+            Stop reading endless tutorials. Start taking photos and get personalized 
+            feedback that helps you improve with every shot.
           </p>
         </motion.div>
 
@@ -128,32 +129,6 @@ export default function FeatureSection() {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="mt-32 text-center"
-        >
-          <div className="inline-flex items-center gap-8 glass rounded-2xl p-8">
-            <div className="text-center">
-              <Zap className="w-12 h-12 text-gold-500 mx-auto mb-2" />
-              <p className="text-2xl font-bold">Lightning Fast</p>
-              <p className="text-gray-400">Real-time processing</p>
-            </div>
-            <div className="w-px h-20 bg-gray-700" />
-            <div className="text-center">
-              <Layers className="w-12 h-12 text-gold-500 mx-auto mb-2" />
-              <p className="text-2xl font-bold">RAW Support</p>
-              <p className="text-gray-400">Maximum quality</p>
-            </div>
-            <div className="w-px h-20 bg-gray-700" />
-            <div className="text-center">
-              <BookOpen className="w-12 h-12 text-gold-500 mx-auto mb-2" />
-              <p className="text-2xl font-bold">Always Learning</p>
-              <p className="text-gray-400">Personalized tips</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

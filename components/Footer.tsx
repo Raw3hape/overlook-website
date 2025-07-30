@@ -1,31 +1,7 @@
-import Link from "next/link";
-import { Mail, Twitter, Instagram, Youtube, MapPin } from "lucide-react";
+"use client";
 
-const footerLinks = {
-  Product: [
-    { href: "/features", label: "Features" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/download", label: "Download" },
-    { href: "/updates", label: "Updates" },
-  ],
-  Learn: [
-    { href: "/learn", label: "Learning Center" },
-    { href: "/learn/tutorials", label: "Tutorials" },
-    { href: "/learn/composition", label: "Composition Guide" },
-    { href: "/community", label: "Community" },
-  ],
-  Company: [
-    { href: "/about", label: "About Us" },
-    { href: "/contact", label: "Contact" },
-    { href: "/press", label: "Press Kit" },
-    { href: "/careers", label: "Careers" },
-  ],
-  Legal: [
-    { href: "/privacy", label: "Privacy Policy" },
-    { href: "/terms", label: "Terms of Service" },
-    { href: "/license", label: "License" },
-  ],
-};
+import Link from "next/link";
+import { Mail, Twitter, Instagram, Youtube } from "lucide-react";
 
 const socialLinks = [
   { icon: Twitter, href: "https://twitter.com/overlookapp", label: "Twitter" },
@@ -34,16 +10,24 @@ const socialLinks = [
 ];
 
 export default function Footer() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="border-t border-gray-800 pt-16 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
-          <div className="col-span-2 md:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div className="md:col-span-2">
             <Link href="/" className="text-2xl font-bold inline-block mb-4">
               <span className="text-gradient">Overlook</span>
             </Link>
-            <p className="text-gray-400 text-sm mb-4">
-              AI-powered photography companion for creators who want to improve.
+            <p className="text-gray-400 text-sm mb-4 max-w-sm">
+              Master photography through practice. Complete challenges, get AI feedback, 
+              and track your improvement.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -61,23 +45,75 @@ export default function Footer() {
             </div>
           </div>
 
-          {Object.entries(footerLinks).map(([category, links]) => (
-            <div key={category}>
-              <h4 className="font-semibold mb-4">{category}</h4>
-              <ul className="space-y-2">
-                {links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-400 hover:text-white text-sm transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div>
+            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <button
+                  onClick={() => scrollToSection("features")}
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
+                  Features
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("how-it-works")}
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
+                  How It Works
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("results")}
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
+                  Results
+                </button>
+              </li>
+              <li>
+                <a
+                  href="https://apps.apple.com/app/overlook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
+                  Download
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">Legal</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:support@overlook.app"
+                  className="text-gray-400 hover:text-white text-sm transition-colors"
+                >
+                  Contact Support
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -92,9 +128,14 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-white transition-colors">
               Terms
             </Link>
-            <Link href="/cookies" className="hover:text-white transition-colors">
-              Cookies
-            </Link>
+            <a
+              href="https://apps.apple.com/app/overlook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              App Store
+            </a>
           </div>
         </div>
       </div>

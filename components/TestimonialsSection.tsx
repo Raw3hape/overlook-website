@@ -10,33 +10,33 @@ const testimonials = [
     id: 1,
     name: "Sarah Mitchell",
     role: "Professional Photographer",
-    avatar: "/images/testimonials/sarah.jpg",
+    avatar: "/images/Sarah.png",
     rating: 5,
-    content: "Overlook transformed how I approach photography. The real-time feedback helped me understand composition in ways no book ever could. My portfolio quality improved dramatically in just weeks.",
+    content: "The challenges pushed me out of my comfort zone. I've been shooting for 10 years, but Overlook helped me see compositions I was missing. The AI feedback is surprisingly accurate.",
   },
   {
     id: 2,
-    name: "David Park",
+    name: "Alex Chen",
     role: "Photography Student",
-    avatar: "/images/testimonials/david.jpg",
+    avatar: "/images/Alex.png",
     rating: 5,
-    content: "As a beginner, I was overwhelmed by camera settings. Overlook's AI suggestions made learning intuitive and fun. It's like having a professional mentor in your pocket.",
+    content: "As a student, this app is invaluable. The structured challenges teach me more than my textbooks. Getting instant scores on my photos helps me understand what works and what doesn't.",
   },
   {
     id: 3,
-    name: "Maria Rodriguez",
+    name: "Elena Rodriguez",
     role: "Travel Blogger",
-    avatar: "/images/testimonials/maria.jpg",
+    avatar: "/images/Elena.png",
     rating: 5,
-    content: "The app helped me capture stunning travel photos consistently. The composition guides and lighting tips are invaluable when you're shooting in unfamiliar locations.",
+    content: "Perfect for improving on the go! I complete challenges during my travels and the feedback helps me capture better stories. My blog engagement has doubled since using Overlook.",
   },
   {
     id: 4,
-    name: "Alex Chen",
-    role: "Hobbyist",
-    avatar: "/images/testimonials/alex.jpg",
+    name: "Marcus Johnson",
+    role: "Weekend Photographer",
+    avatar: "/images/Marcus.png",
     rating: 5,
-    content: "I've tried many camera apps, but Overlook is different. It doesn't just take photos; it teaches you to see like a photographer. Worth every penny!",
+    content: "Finally, an app that teaches instead of just adding filters. The challenges are fun and I can see real improvement in my photos. My Instagram looks so much better now!",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="testimonials" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-500/5 to-transparent" />
       
       <div className="container mx-auto px-6 relative">
@@ -127,16 +127,16 @@ export default function TestimonialsSection() {
             <p className="text-gray-400 mt-2">App Store Rating</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-bold text-gradient">100K+</p>
+            <p className="text-4xl font-bold text-gradient">10K+</p>
             <p className="text-gray-400 mt-2">Active Users</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-bold text-gradient">1M+</p>
-            <p className="text-gray-400 mt-2">Photos Analyzed</p>
+            <p className="text-4xl font-bold text-gradient">50+</p>
+            <p className="text-gray-400 mt-2">Photo Challenges</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-bold text-gradient">50K+</p>
-            <p className="text-gray-400 mt-2">5-Star Reviews</p>
+            <p className="text-4xl font-bold text-gradient">95%</p>
+            <p className="text-gray-400 mt-2">User Improvement</p>
           </div>
         </motion.div>
       </div>
